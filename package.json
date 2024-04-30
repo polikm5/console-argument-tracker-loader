@@ -1,6 +1,6 @@
 {
   "name": "console-argument-tracker-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "track argument of console.log",
   "main": "./dist/index.js",
   "scripts": {
