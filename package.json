@@ -1,6 +1,6 @@
 {
   "name": "console-argument-tracker-loader",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "track argument of console.log",
   "main": "./dist/index.js",
   "homepage": "https://github.com/polikm5/console-argument-tracker-loader",
