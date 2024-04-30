@@ -7,13 +7,21 @@ npm install --save-dev  console-argument-tracker-loader
 ```
 
 ## Usage
+```console
 development
 
-```console
 const a = 1;
 console.test(a); // a: 1
 // equal
 console.log("a:",a); // a: 1
+--------------------
+function a(b) {
+  console.test(b);
+}
+//a: ƒ a(b) {
+//  console.log("b", b);
+//}
+console.test(a);
 
 production
 console.log and console.test will be removed
