@@ -8,7 +8,22 @@ npm install --save-dev  console-argument-tracker-loader
 
 ## Usage
 ```console
-development
+// webpack.config.js
+    rules: [
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'console-argument-tracker-loader'
+          }
+        ]
+      }
+    ]
+```
+
+## loader Result
+```console
+development mode
 
 const a = 1;
 console.test(a); // a: 1
@@ -23,6 +38,7 @@ function a(b) {
 //}
 console.test(a);
 
-production
+production mode
+
 console.log and console.test will be removed
 ```
