@@ -1,0 +1,33 @@
+{
+  "name": "console-argument-tracker-loader",
+  "version": "0.0.1",
+  "description": "track argument of console.log",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --outfile=/dist/index.js --platform=node --format=esm",
+    "release": "release-it --npm.publishArgs=--registry=https://registry.npmjs.org"
+  },
+  "keywords": [
+    "console.log",
+    "debug",
+    "argument",
+    "tracker"
+  ],
+  "author": "chendy",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "webpack": "^5.27.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.20.2",
+    "release-it": "^17.2.1"
+  },
+  "release": {
+    "hooks": {
+      "after:bump": "npm run build"
+    }
+  }
+}
